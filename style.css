@@ -87,7 +87,10 @@
   align-items: flex-end;
   background-size: cover;
   justify-content: center;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  -webkit-transition: background-imagecolor 2s ease-out;
+  -moz-transition: background-image 2s ease-out;
+  -o-transition: background-image 2s ease-out;
+  transition: background-image 2s ease-out;
 }
 .regulartext {
   font-size: 18px;

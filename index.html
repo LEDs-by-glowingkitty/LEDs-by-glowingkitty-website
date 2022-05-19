@@ -118,7 +118,7 @@
       <link href="./home.css" rel="stylesheet" />
 
       <div class="home-container">
-        <div class="home-header headerimage">
+        <div id="headerimage" class="home-header headerimage">
           <h1 class="home-text">
             <span class="home-text01">Let it</span>
             <span class="home-text02">glow!</span>
@@ -485,27 +485,43 @@
 <footer>
     <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
     <script>
-    window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-    window.LOCALE = 'en';
-    window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+      window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+      window.LOCALE = 'en';
+      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
-    window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+      window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
 
-    window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-
+      window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
 
 
-    window.translation = {
-        common: {
-        selectedList: '{quantity} list selected',
-        selectedLists: '{quantity} lists selected'
-        }
-    };
 
-    var AUTOHIDE = Boolean(0);
+
+      window.translation = {
+          common: {
+          selectedList: '{quantity} list selected',
+          selectedLists: '{quantity} lists selected'
+          }
+      };
+
+      var AUTOHIDE = Boolean(0);
+
     </script>
     <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+    <script>
+      var images = ["glowlight-1500w.jpeg","glowtower.jpeg","glowtube.jpeg","magiqwand.jpeg","glowtube_reading_light.jpeg","glowband.jpeg"];
+      var i = 1;
+
+      var imageslider = setInterval(function(){
+        if (i==images.length){
+          i = 0;
+        }
+        console.log("show image");
+        console.log(images[i]);
+        document.getElementById("headerimage").style.backgroundImage = "linear-gradient(0deg, rgb(0, 0, 0) 0.00%,rgba(0, 0, 0, 0) 99.00%),url('images/"+images[i]+"')";
+        i+=1;
+      },5000); //delay is in milliseconds 
+    </script>
 
 
     <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
