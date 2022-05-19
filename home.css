@@ -16,6 +16,9 @@
 .home-text {
   color: #ffffff;
   font-size: 80px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .home-text01 {
   font-style: normal;
@@ -97,12 +100,11 @@
   padding-bottom: var(--dl-space-space-unit);
 }
 .home-legaltext {
-  flex: 0 0 auto;
-  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin: 30px;
   justify-content: flex-start;
 }
 .home-designed-by-glowingkitty {
@@ -128,4 +130,12 @@
 .sib-form-container.open{
   height: auto;
   opacity: 1;
+}
+
+@media (max-width: 500px) {
+
+  .home-text {
+    font-size: 60px;
+  }
+
 }
