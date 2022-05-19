@@ -1,10 +1,286 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
+    <title>LEDs by glowingkitty website</title>
+    <meta property="og:title" content="LEDs by glowingkitty website" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: LexendDeca-Regular;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    Welcome to this test page!
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header headerimage">
+          <h1 class="home-text">
+            <span class="home-text01">Let it</span>
+            <span class="home-text02">glow!</span>
+          </h1>
+        </div>
+        <div class="home-main-content">
+          <span class="regulartext">
+            <span>Stay up to date</span>
+            <br />
+            <span>on all my LED projects:</span>
+          </span>
+          <div class="home-subscribe-options">
+            <img
+              src="public/playground_assets/mdi_email-newsletter.svg"
+              class="socialmediaicon"
+            />
+            <a
+              href="http://medium.com/@glowingkitty-led"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link"
+            >
+              <img
+                src="public/playground_assets/akar-icons_medium-fill.svg"
+                class="socialmediaicon"
+              />
+            </a>
+            <a
+              href="http://patreon.com/glowingkitty"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link1"
+            >
+              <img
+                src="public/playground_assets/bxl_patreon.svg"
+                class="socialmediaicon"
+              />
+            </a>
+            <a
+              href="https://instagram.com/glowing_kitty"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link2"
+            >
+              <img
+                src="public/playground_assets/ant-design_instagram-filled.svg"
+                class="socialmediaicon"
+              />
+            </a>
+          </div>
+         
+        </div>
+        <div class="home-footer">
+          <div class="home-footer-links">
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link3 footerlink"
+            >
+              Privacy
+            </a>
+            <a
+              href="http://github.com/glowingkitty?tab=repositories"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link4"
+            >
+              <img
+                alt="image"
+                src="public/playground_assets/akar-icons_github-fill.svg"
+                class="home-image4 socialmediaicon"
+              />
+            </a>
+            <a
+              href="https://example.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link5 footerlink"
+            >
+              Imprint
+            </a>
+          </div>
+          <div class="home-legaltext">
+            <span>
+              <span>Introduction</span>
+              <br />
+              <span>
+                This policy sets out the different areas where user privacy is
+                concerned and outlines the obligations &amp; requirements of the
+                users, the website and website owner. Furthermore the way this
+                website processes, stores and protects user data and information
+                will also be detailed within this policy.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>Email address</span>
+              <br />
+              <span>
+                If you subscribe to our newsletter, we send your e-mail address
+                to Mailchimp, where we manage our newsletter subscribers and
+                send newsletter emails from. Check our their privacy policies
+                here for more details on how they process your data.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>Access logs</span>
+              <br />
+              <span>
+                The service hosting this website stores access logs, like your
+                IP address &amp; device information. This data is not accessible
+                to and not readable for the owner of this website. The hosting
+                service, GitHub, has their privacy policy is available here:
+                https://docs.github.com/en/github/site-policy/github-privacy-statement
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>Cookies</span>
+              <br />
+              <span>This website does not use any cookies.</span>
+              <br />
+              <span></span>
+              <br />
+              <span>External links</span>
+              <br />
+              <span>
+                We do not have any control over other other websites which we
+                link to on this website. Be aware that all the linked websites
+                (Instagram, GitHub, Medium and so on) will use cookies and track
+                you. Check out their privacy policies for more details.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>Changes to policy</span>
+              <br />
+              <span>
+                Changes in this policy will be posted on this page. You are
+                advised to check this page regularly to view the most recent
+                privacy policy.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>Your right to your data</span>
+              <br />
+              <span>You have the following rights regarding your data:</span>
+              <br />
+              <span>Right to information</span>
+              <br />
+              <span>Right to correction or deletion</span>
+              <br />
+              <span>Right to restriction of processing</span>
+              <br />
+              <span>Right to refuse processing</span>
+              <br />
+              <span>Right to data transferability</span>
+              <br />
+              <span>
+                In addition, you have the right to complain to a data protection
+                supervisory authority regarding our processing of your personal
+                data.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>
+                Message us in case you want to request or delete your data:
+              </span>
+              <br />
+              <span>(email address)</span>
+              <br />
+              <span></span>
+            </span>
+            <span>
+              <span>This website is operated by</span>
+              <br />
+              <span></span>
+              <br />
+              <span>(Name &amp; address)</span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span>Contact</span>
+              <br />
+              <span>Telephone: (phone number)</span>
+              <br />
+              <span>Email: (email address)</span>
+              <br />
+              <span></span>
+              <br />
+              <span>VAT-ID</span>
+              <br />
+              <span>
+                Sales tax identification number according to §27a Value Added
+                Tax Act: (VAT-ID)
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>EU Dispute Settlement</span>
+              <br />
+              <span>
+                The European Commission provides a platform for online dispute
+                resolution (OS): https://ec.europa.eu/consumers/odr/.
+              </span>
+              <br />
+              <span>Our e-mail address can be found above in the imprint.</span>
+              <br />
+              <span></span>
+              <br />
+              <span>
+                Consumer dispute resolution/universal arbitration board
+              </span>
+              <br />
+              <span>
+                We are not willing or obliged to participate in dispute
+                settlement procedures before a consumer arbitration board.
+              </span>
+              <br />
+              <span></span>
+            </span>
+          </div>
+          <div class="home-designed-by-glowingkitty">
+            <img
+              src="public/playground_assets/designedbyglowingkitty.svg"
+              alt="image"
+              class="home-image5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
