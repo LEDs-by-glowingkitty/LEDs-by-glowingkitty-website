@@ -115,3 +115,11 @@
   width: 100px;
   object-fit: cover;
 }
+
+.legal_text_inside{
+  height: 0px;
+  overflow: hidden  ;
+}
+.legal_text_inside.open{
+  height: auto;
+}

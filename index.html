@@ -33,6 +33,25 @@
       }
     </style>
     <link rel="stylesheet" href="./style.css" />
+
+    <script>
+        function triggerprivacy() {
+            document.getElementById("imprint").classList.remove("open")
+            if (document.getElementById("privacy").classList.contains("open")){
+                document.getElementById("privacy").classList.remove("open")
+            } else {
+                document.getElementById("privacy").classList.add("open")
+            }
+        }
+        function triggerimprint() {
+            document.getElementById("privacy").classList.remove("open")
+            if (document.getElementById("imprint").classList.contains("open")){
+                document.getElementById("imprint").classList.remove("open")
+            } else {
+                document.getElementById("imprint").classList.add("open")
+            }
+        }
+    </script>
   </head>
   <body>
     <div>
@@ -52,10 +71,12 @@
             <span>on all my LED projects:</span>
           </span>
           <div class="home-subscribe-options">
-            <img
-              src="public/playground_assets/mdi_email-newsletter.svg"
-              class="socialmediaicon"
-            />
+            <a class="home-link">
+                <img
+                src="public/playground_assets/mdi_email-newsletter.svg"
+                class="socialmediaicon"
+                />
+            </a>
             <a
               href="http://medium.com/@glowingkitty-led"
               target="_blank"
@@ -95,10 +116,9 @@
         <div class="home-footer">
           <div class="home-footer-links">
             <a
-              href="https://example.com"
-              target="_blank"
               rel="noreferrer noopener"
               class="home-link3 footerlink"
+              onclick="triggerprivacy();"
             >
               Privacy
             </a>
@@ -115,16 +135,15 @@
               />
             </a>
             <a
-              href="https://example.com"
-              target="_blank"
               rel="noreferrer noopener"
               class="home-link5 footerlink"
+              onclick="triggerimprint();"
             >
               Imprint
             </a>
           </div>
           <div class="home-legaltext">
-            <span>
+            <span id="privacy" class="legal_text_inside">
               <span>Introduction</span>
               <br />
               <span>
@@ -217,7 +236,7 @@
               <br />
               <span></span>
             </span>
-            <span>
+            <span id="imprint" class="legal_text_inside">
               <span>This website is operated by</span>
               <br />
               <span></span>
