@@ -15,7 +15,7 @@
 }
 .home-text {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 80px;
 }
 .home-text01 {
   font-style: normal;
@@ -31,6 +31,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 48vh;
+  padding-top: 10vh;
 }
 .home-subscribe-options {
   flex: 0 0 auto;
