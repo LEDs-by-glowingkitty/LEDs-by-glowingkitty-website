@@ -124,3 +124,8 @@
 .legal_text_inside.open{
   height: auto;
 }
+
+.sib-form-container.open{
+  height: auto;
+  opacity: 1;
+}

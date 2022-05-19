@@ -72,26 +72,40 @@
             color: #c0ccda;
         }
     </style>
+    <link rel="stylesheet" href="./sib-styles.css">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    
 
     <script>
         function triggerprivacy() {
             document.getElementById("imprint").classList.remove("open")
             if (document.getElementById("privacy").classList.contains("open")){
-                document.getElementById("privacy").classList.remove("open")
+                document.getElementById("privacy").classList.remove("open");
             } else {
-                document.getElementById("privacy").classList.add("open")
+                document.getElementById("privacy").classList.add("open");
             }
-        }
+        };
+
         function triggerimprint() {
             document.getElementById("privacy").classList.remove("open")
             if (document.getElementById("imprint").classList.contains("open")){
-                document.getElementById("imprint").classList.remove("open")
+                document.getElementById("imprint").classList.remove("open");
             } else {
-                document.getElementById("imprint").classList.add("open")
+                document.getElementById("imprint").classList.add("open");
+            }
+        };
+
+        function triggernewsletter(){
+            if (document.getElementById("sib-container").style.height == "0px"){
+                document.getElementById("sib-container").style.height = "auto";
+                document.getElementById("sib-container").style.opacity = "1";
+            } else {
+                document.getElementById("sib-container").style.height = "0px";
+                document.getElementById("sib-container").style.opacity = "0";
             }
         }
+
+
     </script>
 
   </head>
@@ -113,7 +127,7 @@
             <span>on all my LED projects:</span>
           </span>
           <div class="home-subscribe-options">
-            <a class="home-link">
+            <a class="home-link" onclick="triggernewsletter()">
                 <img
                 src="public/playground_assets/mdi_email-newsletter.svg"
                 class="socialmediaicon"
@@ -179,7 +193,7 @@
             </div>
             </div>
             <div></div>
-            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; overflow:hidden; height: 0px; padding: 0px; opacity: 0;">
             <form id="sib-form" method="POST" action="https://6b56232f.sibforms.com/serve/MUIEAOWjO_qO8JOOfU8nO05gLWpw26zvY9fCgwzGbPzEBc-NNkIb7ZPWW9-Vcn67x52ub6B1Pr5uQjbc0aZDK_My4I__eJqhInIz5UJozAS8zw_tZ1jaT-AjOfWRnlziJOY9J82rYQJMrWgjl_KRtDFdjUTP4PCYb_xKstFu_euB9D_lwIHrgRJ0slewEx2nlk20GmgLo8YYwyRy" data-type="subscription">
                 <div style="padding: 8px 0;">
                 <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#3C4858; background-color:transparent;">
