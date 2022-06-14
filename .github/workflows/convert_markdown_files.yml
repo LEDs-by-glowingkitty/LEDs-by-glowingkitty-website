@@ -15,3 +15,10 @@ jobs:
           image_import: ./images
           # Default is true, can set to false to only get PDF files
           build_html: true
+      - name: push changes to remote
+        run: |
+          git config --global user.name "glowingkitty"
+          git config --global user.email "contact@marcobartsch.me"
+
+          git add docs git commit -m "Updated PDF & HTML files"
+          git push
