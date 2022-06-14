@@ -20,5 +20,6 @@ jobs:
           git config --global user.name "glowingkitty"
           git config --global user.email "contact@marcobartsch.me"
 
-          git add docs git commit -m "Updated PDF & HTML files"
+          git add docs
+          git commit -m "Updated PDF & HTML"
           git push
