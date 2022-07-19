@@ -119,6 +119,12 @@
   text-transform: none;
   text-decoration: none;
 }
-
+.mainbutton{
+  padding: 15px;
+  font-size: 22px;
+  background-color:#E14747;
+  color: white;
+  margin: 50px;
+}
 
 
